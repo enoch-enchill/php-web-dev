@@ -1,19 +1,19 @@
-# [Topic 03]: Creating simple MVC application in PHP
+# Topic 03: Creating simple MVC application in PHP
 Under this topic, we tackle series of lessons that eventually build up into a simple model-view-controller applciation in PHP.
 We will begin the topic by defining model objects that represent our database entities. We will add a simple configuration to establish a connection to our database.
 With that in place, we then look at adding repository classes to help manage the resources in our data storage.
 And then, we will create controller classes to convey data resources to the web views.
 
-# Table of Contents
-## Lesson 01: Application directory structure
-## Lesson 02: Defining model objects
-## Lesson 03: Database connection configuration
-## Lesson 04: Data resource repositories
-## Lesson 05: Controllers
-## Lesson 06: View templates
-## Lesson 07: Route configuration
-## Lesson 08: User session configuration
-## Lesson 09: Conclusion
+## Table of Contents
++ [Lesson 01][Lession 01]: Application directory structure
++ Lesson 02: Defining model objects
++ Lesson 03: Database connection configuration
++ Lesson 04: Data resource repositories
++ Lesson 05: Controllers
++ Lesson 06: View templates
++ Lesson 07: Route configuration
++ Lesson 08: User session configuration
++ Lesson 09: Conclusion
 
 
 
