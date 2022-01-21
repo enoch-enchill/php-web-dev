@@ -57,12 +57,56 @@ We will come to understand the purpose each of these directories and files is se
   * [index.php](./src/index.php)
   * [routes.php](./src/routes.php)
 
-```
-NOTE: You notice that the `controllers`, `models` and `repositories` directories have just **one** file in each of them. They are so because this project is for demonstration purpose. A real application will have quite a number of files in these folders.
-```
+> NOTE: You notice that the `controllers`, `models` and `repositories` directories have just **one** file in each of them. They are so because this project is for demonstration purpose. A real application will have quite a number of files in these folders.
 
 ## 02: Defining Model Objects
 
 > Introduction
 
 By `model`, I'm referring to the `class` representation of the database objects (tables, views, etc.). In essence, I mean to say that, every table in our database will be represented as a PHP class with the corresponding fields as static fields in the class.
+
+> UserModel
+
+```
+<?php
+class UserModel {
+
+    // Data object fields
+    private static $id;
+    private static $username;
+    private static $email_address;
+    private static $phone_number;
+    private static $is_admin;
+    private static $is_active;
+    private static $created_at;
+    private static $updated_at;
+
+    // Object setter
+    public static function set($id, $username, $email_address, $phone_number, $is_admin, $is_active, $created_at, $updated_at){
+        self::$id = $id;
+        self::$username = $username;
+        self::$email_address = $email_address;
+        self::$phone_number = $phone_number;
+        self::$password = $password;
+        self::$is_admin = $is_admin;
+        self::$is_active = $is_active;
+        self::$created_at = $created_at;
+        self::$updated_at = $updated_at;
+    }
+
+    // Obejct getter
+    public static function get(){
+        return array(
+            "id" => self::$id,
+            "username" => self::$username,
+            "email_address" => self::$email_address,
+            "phone_number" => self::$phone_number,
+            "is_admin" => self::$is_admin,
+            "is_active" => self::$is_active,
+            "created_at" => self::$created_at,
+            "updated_at" => self::$updated_at,
+        );
+    }
+
+}
+```
