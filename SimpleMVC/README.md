@@ -7,7 +7,7 @@ And then, we will create controller classes to convey data resources to the web 
 ## Table of Contents
 + [Lesson 01](#01-application-directory-structure): Application directory structure
 + [Lesson 02](#02-defining-model-objects): Defining model objects
-+ Lesson 03: Database connection configuration
++ [Lesson 03](#03-database-connection-configuration): Database connection configuration
 + Lesson 04: Data resource repositories
 + Lesson 05: Controllers
 + Lesson 06: View templates
@@ -68,45 +68,49 @@ By `model`, I'm referring to the `class` representation of the database objects 
 > UserModel
 
 ```
-<?php
-class UserModel {
+  <?php
+  class UserModel {
 
-    // Data object fields
-    private static $id;
-    private static $username;
-    private static $email_address;
-    private static $phone_number;
-    private static $is_admin;
-    private static $is_active;
-    private static $created_at;
-    private static $updated_at;
+      // Data object fields
+      private static $id;
+      private static $username;
+      private static $email_address;
+      private static $phone_number;
+      private static $is_admin;
+      private static $is_active;
+      private static $created_at;
+      private static $updated_at;
 
-    // Object setter
-    public static function set($id, $username, $email_address, $phone_number, $is_admin, $is_active, $created_at, $updated_at){
-        self::$id = $id;
-        self::$username = $username;
-        self::$email_address = $email_address;
-        self::$phone_number = $phone_number;
-        self::$password = $password;
-        self::$is_admin = $is_admin;
-        self::$is_active = $is_active;
-        self::$created_at = $created_at;
-        self::$updated_at = $updated_at;
-    }
+      // Object setter
+      public static function set($id, $username, $email_address, $phone_number, $is_admin, $is_active, $created_at, $updated_at){
+          self::$id = $id;
+          self::$username = $username;
+          self::$email_address = $email_address;
+          self::$phone_number = $phone_number;
+          self::$password = $password;
+          self::$is_admin = $is_admin;
+          self::$is_active = $is_active;
+          self::$created_at = $created_at;
+          self::$updated_at = $updated_at;
+      }
 
-    // Obejct getter
-    public static function get(){
-        return array(
-            "id" => self::$id,
-            "username" => self::$username,
-            "email_address" => self::$email_address,
-            "phone_number" => self::$phone_number,
-            "is_admin" => self::$is_admin,
-            "is_active" => self::$is_active,
-            "created_at" => self::$created_at,
-            "updated_at" => self::$updated_at,
-        );
-    }
+      // Obejct getter
+      public static function get(){
+          return array(
+              "id" => self::$id,
+              "username" => self::$username,
+              "email_address" => self::$email_address,
+              "phone_number" => self::$phone_number,
+              "is_admin" => self::$is_admin,
+              "is_active" => self::$is_active,
+              "created_at" => self::$created_at,
+              "updated_at" => self::$updated_at,
+          );
+      }
 
-}
+  }
 ```
+
+> NOTE: I ommited the `password` field from the model class. This is because, the `password` will not be send to the view template.
+
+## 03: Database Connection Configuration
