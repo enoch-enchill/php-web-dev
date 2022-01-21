@@ -25,12 +25,12 @@ In addition to the directories, we shall have three other important files - `ind
 
 We will come to understand the purpose each of these directories and files is serving as we move along.
 
-+ `SimpleMVC`
-    + `-- configs`
-        + `ConstantsConfig.php`
-        + `RouteConfig.php`
-        + `SessionConfig.php`        
-    + `-- controllers`
+. 
+├── configs
+|   ├── ConstantsConfig.php
+|   |── RouteConfig.php
+|       SessionConfig.php        
+|    + `-- controllers`
         + `UsersController.php`
         + `...`
     + `models`
