@@ -57,4 +57,12 @@ We will come to understand the purpose each of these directories and files is se
   * [index.php](./src/index.php)
   * [routes.php](./src/routes.php)
 
+```
+NOTE: You notice that the `controllers`, `models` and `repositories` directories have just **one** file in each of them. They are so because this project is for demonstration purpose. A real application will have quite a number of files in these folders.
+```
+
 ## 02: Defining Model Objects
+
+> Introduction
+
+By `model`, I'm referring to the `class` representation of the database objects (tables, views, etc.). In essence, I mean to say that, every table in our database will be represented as a PHP class with the corresponding fields as static fields in the class.
