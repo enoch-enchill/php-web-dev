@@ -5,7 +5,7 @@ With that in place, we then look at adding repository classes to help manage the
 And then, we will create controller classes to convey data resources to the web views.
 
 ## Table of Contents
-+ [Lesson 01][Lession 01]: Application directory structure
++ [Lesson 01](lesson_01): Application directory structure
 + Lesson 02: Defining model objects
 + Lesson 03: Database connection configuration
 + Lesson 04: Data resource repositories
