@@ -3,7 +3,7 @@ Practical PHP Web Development tutorials for absolute beggingers as well as well 
 
 # Course Outline
 
-## Topic 01: Database Connection
+## [Topic 01](https://github.com/et-enchill/php-web-dev/tree/main/DatabaseConnection): Database Connection
 
 
 ## Topic 02: PHP Mysqli Prepared Statments

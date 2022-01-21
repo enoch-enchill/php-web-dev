@@ -19,4 +19,8 @@ class ConstantsConfig {
     public static function getCode($len){
         return substr(str_shuffle("0123456789abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ"), 0, intval($len));
     }
+
+    public static $int_true = 1;
+
+    public static $int_false = 0
 }

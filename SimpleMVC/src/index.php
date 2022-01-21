@@ -30,3 +30,12 @@ spl_autoload_register(function ($class_name) {
     }    
 });
 
+
+/* -----------------------------------------
+        CLASSES AUTO LOADER
+---------------------------------------------*/
+include("routes.php");
+
+
+// Run RouteConfig
+RouteConfig::run();
