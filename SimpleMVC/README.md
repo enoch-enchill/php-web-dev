@@ -17,7 +17,8 @@ And then, we will create controller classes to convey data resources to the web 
 
 
 
-## Lesson 01: Application Directory Structure
+## Lesson 01
+## Application Directory Structure
 
 To have a very simple and clean project outlook, we need to group our files into various functionalities.
 First and foremost, we shall create a parent (initial) working directory name `SimpleMVC`. This folder will serve as the root or starting directory for the whole project.
