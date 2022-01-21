@@ -6,7 +6,7 @@ And then, we will create controller classes to convey data resources to the web 
 
 ## Table of Contents
 + [Lesson 01](lesson_01): Application directory structure
-+ Lesson 02: Defining model objects
++ [Lesson 02](lesson_02): Defining model objects
 + Lesson 03: Database connection configuration
 + Lesson 04: Data resource repositories
 + Lesson 05: Controllers
@@ -17,8 +17,8 @@ And then, we will create controller classes to convey data resources to the web 
 
 
 
-# Lesson 01
-# Application Directory Structure
+## Lesson 01: Application Directory Structure
+
 To have a very simple and clean project outlook, we need to group our files into various functionalities.
 First and foremost, we shall create a parent (initial) working directory name `SimpleMVC`. This folder will serve as the root or starting directory for the whole project.
 Inside the root directory, we shall have the following subdirectories: `configs`, `controllers`, `models`, `repositories` and `views`.
