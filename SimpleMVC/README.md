@@ -19,8 +19,42 @@ And then, we will create controller classes to convey data resources to the web 
 ## 01: Application Directory Structure
 
 To have a very simple and clean project outlook, we need to group our files into various functionalities.
-First and foremost, we shall create a parent (initial) working directory name `SimpleMVC`. This folder will serve as the root or starting directory for the whole project.
+First and foremost, we shall create a parent (**root** or **working**) directory named `SimpleMVC`. This folder will serve as the root or starting directory for the whole project.
 Inside the root directory, we shall have the following subdirectories: `configs`, `controllers`, `models`, `repositories` and `views`.
-In addition to the directories, we shall have two important files - `index.php`, `routes.php` and `.htaccess`.
+In addition to the directories, we shall have three other important files - `index.php`, `routes.php` and `.htaccess`.
 
 We will come to understand the purpose each of these directories and files is serving as we move along.
+
++ `SimpleMVC`
+    + `-- configs`
+        + `ConstantsConfig.php`
+        + `RouteConfig.php`
+        + `SessionConfig.php`        
+    + `-- controllers`
+        + `UsersController.php`
+        + `...`
+    + `models`
+        + `UserModel.php`
+        + `...`
+    + `repositories`
+        + `UsersRepository.php`
+        + `...`
+    + `views`
+        + `assets`
+            + `css`
+                + `style.css`
+                + `bootstrap.min.css`
+                + `...`
+            + `imgs`
+                + `logo.png`
+                + `...`
+            + `js`
+                + `main.js`
+                + `bootstrap.min.js`
+                + `...`
+        + `home.php`
+        + `about.php`
+        + `...`
+    + `.htaccess`
+    + `index.php`
+    + `routes.php`
