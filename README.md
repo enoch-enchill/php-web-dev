@@ -1,7 +1,6 @@
 # PHP Web Development
 Practical PHP Web Development tutorials for absolute beggingers as well as well vested developers who need quick inspirations.
 
-# Course Outline
 
 ## [Topic 01](./DatabaseConnection): Database Connection
 
