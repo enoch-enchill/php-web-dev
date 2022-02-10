@@ -2,10 +2,10 @@
 class ConstantsConfig {
 
     // Database Credentials
-    public static function dbConn(){
-        //new mysqli(host, user, pass, db);
-        return new mysqli("localhost", "root", "", "simple_mvc_php");
-    }
+    public static $database_host = "localhost";
+    public static $database_user = "root";
+    public static $database_pass = "";
+    public static $database_name = "address_book";
 
     // Session Names
     public static $user_session_id = "user_session";
@@ -22,5 +22,5 @@ class ConstantsConfig {
 
     public static $int_true = 1;
 
-    public static $int_false = 0
+    public static $int_false = 0;
 }

@@ -7,7 +7,7 @@ class UsersRepository {
     
     public static function getAll() {
         // Get users from database
-        $dbConn = ConstantsConfig::dbConn();
+        $dbConn = DatabaseConfig::connection();
         $stmt = $dbConn->prepare("SELECT * FROM " . self::$table);
         $stmt->execute();
         $results = $stmt->get_result();

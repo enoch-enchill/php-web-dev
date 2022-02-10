@@ -32,7 +32,7 @@ spl_autoload_register(function ($class_name) {
 
 
 /* -----------------------------------------
-        CLASSES AUTO LOADER
+        APPLICATION ROUTES
 ---------------------------------------------*/
 include("routes.php");
 
