@@ -1,19 +1,22 @@
 # Topic 03: Creating simple MVC application in PHP
-Under this topic, we tackle series of lessons that eventually build up into a simple model-view-controller applciation in PHP.
+Under this topic, we tackle series of lessons that eventually build up into a simple model-view-controller applciation in PHP on MySQL database server.
+
 We will begin the topic by defining model objects that represent our database entities. We will add a simple configuration to establish a connection to our database.
 With that in place, we then look at adding repository classes to help manage the resources in our data storage.
+
 And then, we will create controller classes to convey data resources to the web views.
 
 ## Table of Contents
 + [Lesson 01](#01-application-directory-structure): Application directory structure
-+ [Lesson 02](#02-defining-model-objects): Defining model objects
-+ [Lesson 03](#03-database-connection-configuration): Database connection configuration
-+ Lesson 04: Data resource repositories
-+ Lesson 05: Controllers
-+ Lesson 06: View templates
-+ Lesson 07: Route configuration
-+ Lesson 08: User session configuration
-+ Lesson 09: Conclusion
++ [Lesson 02](#02-defining-application-configurations): Defining application configurations
++ [Lesson 03](#02-defining-model-objects): Defining model objects
++ [Lesson 04](#03-database-connection-configuration): Database connection configuration
++ Lesson 05: Data resource repositories
++ Lesson 06: Controllers
++ Lesson 07: View templates
++ Lesson 08: Route configuration
++ Lesson 09: User session configuration
++ Lesson 10: Conclusion
 
 
 ## 01: Application Directory Structure
@@ -32,6 +35,7 @@ We will come to understand the purpose each of these directories and files is se
 * [src/](./src)
   * [configs/](./src/configs)
     * [ConstantsConfig.php](./src/configs/ConstantsConfig.php)
+    * [DatabaseConfig.php](./src/configs/DatabaseConfig.php)
     * [RouteConfig.php](./src/configs/RouteConfig.php)
     * [SessionConfig.php](./src/configs/SessionConfig.php)
   * [controllers/](./src/controllers)
@@ -59,7 +63,43 @@ We will come to understand the purpose each of these directories and files is se
 
 > NOTE: You notice that the `controllers`, `models` and `repositories` directories have just **one** file in each of them. They are so because this project is for demonstration purpose. A real application will have quite a number of files in these folders.
 
-## 02: Defining Model Objects
+<br>
+
+## 02: Defining Application Configurations
+
+<br>
+To get things simple and clean, let centralize the constants and other configurations that will the various components of our application will be consuming.
+
+<br>
+
+> ConstantsConfig.php
+
+Let's begin by defining our constants. We define constants for `database_host`, `database_name`, `database_user` and `database_pass`.
+
+Again, we will also define another constants `user_session` for storing user session data.
+> DatabaseConfig.php
+```
+<?php 
+class ConstantsConfig {
+
+    // Database Credentials
+    const $database_host = "localhost";
+    const $database_user = "root";
+    const $database_pass = "";
+    const $database_name = "address_book";
+
+    // Session Names
+    const $user_session_id = "user_session";
+
+    ...
+    ...
+}
+```
+
+That's it for `ConstantsConfig.php` for now. When you need other constants along the way, we will come back to this file to define them.
+
+
+## 03: Defining Model Objects
 
 > Introduction
 
@@ -113,4 +153,4 @@ By `model`, I'm referring to the `class` representation of the database objects 
 
 > NOTE: I ommited the `password` field from the model class. This is because, the `password` will not be send to the view template.
 
-## 03: Database Connection Configuration
+## 04: Database Connection Configuration
